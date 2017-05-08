@@ -1,0 +1,222 @@
+@import url(reset.css);
+@import url(common.css);
+   .line {
+            color: #c4c4c4;
+            font-style: normal;
+        }   
+   a {
+        color: #6c6c6c;
+        text-decoration: none;
+    }
+.top_r {
+    width: 100%;
+    min-width: 1100px;
+    background: #f2f2f2;
+    height: 29px;
+    font-size: 12px;
+    border-bottom: 1px #e5e5e5 solid;
+    overflow: hidden;
+ 
+    .top_h_l {
+        li {
+            float: left;
+            line-height: 30px;
+            margin-left: 30px;
+        }
+        li:nth-child(1) {
+            margin-left: 0px;
+        }
+    }
+    .top_h_r {
+        float: right;
+        padding-right: 20px;
+        .xg {
+            display: none;
+            position: absolute;
+            z-index: 39;
+            border: 1px #e5e5e5 solid;
+            border-top: none;
+            padding: 0 10px;
+            padding-bottom: 7px;
+            margin-left: -10px;
+            background:#fff;
+            li {
+                cursor: pointer;
+            }
+        }
+        .myserver {
+            display: none;
+            position: absolute;
+            z-index: 39;
+            border: 1px #e5e5e5 solid;
+            border-top: none;
+            padding: 0 16px;
+            padding-bottom: 7px;
+            margin-left: -10px;
+            background:#fff;
+            li {
+                cursor: pointer;
+            }
+        }
+        li:hover {
+            background: #fff;
+        }
+        i {
+            float: right;
+            width: 6px;
+            height: 29px;
+            margin-left: 7px;
+        }
+        i:nth-child(1) {
+            background: url(../img/header/topnav.png) no-repeat 0 -70px;
+        }
+        i:nth-child(2) {
+            background: url(../img/header/topnav.png) no-repeat 0 -70px;
+        }
+        i:nth-child(3) {
+            background: url(../img/header/topnav.png) no-repeat 0 -70px;
+        }
+        .phone {
+            padding-left: 14px;
+            background: url(../img/header/topnav.png) no-repeat 0 -10px;
+        }
+
+    }
+    .top_h_r>li {
+        float: left;
+        line-height: 30px;
+        padding: 0 10px;
+        /*.wxa{display:inline-block;width:65px;height:29px;text-align:center;}*/
+        span {
+            display: inline-block;
+            font-size: 10px;
+        }
+    }
+}
+
+
+/*设置下拉微信*/
+
+.wx {
+    display: none;
+    padding: 0 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-left: -10px;
+    background: #fff;
+    border: 1px #e5e5e5 solid;
+    border-top: none;
+    position: absolute;
+    z-index: 39px;
+}
+
+
+/*设置头部搜索栏*/
+
+.top_c {
+    .logo {
+        float: left;
+    }
+    .search1{
+    	border:2px #00c8ff solid;
+    }
+    .search{
+    	float:left;
+    	margin:25px 0 0 80px;
+    	input{height:35px;padding:0px 0px;width:330px;border:none;color:#6c6c6c;}
+		#btn{height:40px;width:100px;background:#00c8ff;border:none;font-size:20px;color:white;font-weight:bold;cursor:pointer;}
+		ul{margin-top:5px;}
+		ul li{float:left;font-size:12px;margin-left:7px;}
+		ul li i{margin-left:5px;}
+    }
+	
+	.cart{
+		float:right;
+		width:126px;
+		margin: 26px 2px 0 0;
+		padding:10px 15px;
+		border: 1px solid #c4c4c4;
+		border-radius:5px;
+		text-align:center;
+		font-size:12px;
+		i{	
+			font-size:20px;
+		}
+	}
+
+}
+/*设置菜单栏*/
+h3{display:inline-block;}
+.nav_line{border-bottom: 1px dotted #000;margin-bottom:5px;}
+
+.top_f_active{
+	background:#00647f;
+}
+.top_f{
+	height:35px;
+	background:#00c8ff;
+	min-width:1100px;
+	li{
+		float:left;
+		line-height:35px;
+		.aa{
+			display:block;
+			width:120px;
+			height:35px;
+			color:white;
+			text-align:center;		
+		}
+		.tt{
+			
+			color:red;
+		}
+
+		.navlist{
+			display:none;
+			height:284px;
+			z-index:99;
+			background:#fff;
+			/*border: 1px solid #000;*/
+			position:absolute;
+			left:0;
+			a{color:#6c6c6c;}
+			#zt{color:red;font-size:23px;}
+			ul{
+				width:360px;
+				height:133px;
+				padding:40px;
+				z-index:23;
+				font-size:12px;
+				float:left;
+				li{
+					float:left;
+					margin-left:8px;
+					margin-top:-10px;
+				}
+			}
+		}
+		
+
+	}
+
+/*设置导航栏右侧*/
+.top_f_r{
+	 float:right;
+	 color:#fff;
+	 li{
+	 	font-size: 14px;
+   		height: 35px;
+   		line-height: 35px;
+   		overflow: hidden;
+   		width:27px;
+   		margin-left:5px;
+   		i{font-size:20px;}
+	 }
+	 li a{
+	 	color:#fff;
+	 }
+}
+
+}
+/*设置下拉框定位其父级ul*/
+.top_f_l ul{position:relative;}
